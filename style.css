@@ -1,11 +1,92 @@
 * {
-    margin: 15px;
-    padding: 5px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-pre {
+/*Menu - sobre.html*/
+header {
+  background-color: #8b1e3f;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* layout principal do menu */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* lista de links */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* botão do menu (hambúrguer) */
+.menu-toggle {
+  display: none; /* escondido no desktop */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* versão para telas pequenas */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* some o menu inicialmente */
+    flex-direction: column;
+    background-color: #8b1e3f;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 150px;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .menu.show {
+    display: flex; /* mostra o menu quando clicar */
+  }
+
+  .menu-toggle {
+    display: flex; /* aparece o botão hambúrguer */
+  }
+}
+
+
+
+
+
+
+.precode {
     background-color: bisque;
-    
+    margin: 12px;
+    padding: 10px;
 }
 
 body {
@@ -21,5 +102,27 @@ p {
 }
 
 h2 {
+    text-align: center;
+}
+
+h3 {
+    margin: 12px;
+}
+
+/*Sobre*/
+
+a {
+    color: rgb(181, 51, 51);
+}
+
+#titulosobre {
+    color: brown;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.sobre {
+    margin-left: 400px;
+    margin-right: 400px;
     text-align: center;
 }

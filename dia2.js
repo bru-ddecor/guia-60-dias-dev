@@ -1,15 +1,18 @@
-alert("Abra o console para ver o resultado de cada exercício com os dados que você digitar a seguir.")
+setTimeout(function() {
+ alert("Abra o console ( Ctrl + Shift + j ) para ver o resultado de cada exercício com os dados que você digitar a seguir.");
 
+
+setTimeout(function() {
 //ex01
 let idade = Number(prompt("(ex01): Digite sua idade: "))
 if (idade >= 18 && idade < 70) {
-    console.log("Voto Obrigatório!");
+    console.log(`Você tem ${idade} anos, portanto, seu voto é obrigatório!`);
 } else if (idade >=70) {
-    console.log("Voto Facultativo")
+    console.log(`Você tem ${idade} anos, portanto, seu voto é facultativo!`)
 } else if (idade < 16) {
-    console.log("Você não pode votar");
+    console.log(`Você tem ${idade} anos, portanto, você não pode votar!`);
 } else {
-    console.log("Voto Facultativo");
+    console.log(`Você tem ${idade} anos, portanto, seu voto é facultativo!`);
 }
 
 //ex02
@@ -36,10 +39,12 @@ if (salario_cliente >= notebook) {
 let idade1 = Number(prompt("(ex extra): Digite sua idade: "))
 
 if (idade1 >=70 || (idade1 >= 16 && idade1 < 18)) {
-    console.log("Voto Facultativo");
+    console.log(`Você tem ${idade1} anos, portanto, seu voto é facultativo!`);
 } else if (idade1 >= 18 && idade < 70) {
-    console.log("Voto Obrigatório!");
+    console.log(`Você tem ${idade1} anos, portanto, seu voto é obrigatório!`);
 } else {
-    console.log("Você não pode votar");
+    console.log(`Você tem ${idade1} anos, portanto, você não pode votar!`);
 }
+}, 1000);
 
+},5000);
