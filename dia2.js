@@ -1,5 +1,7 @@
+alert("Abra o console para ver o resultado de cada exercício com os dados que você digitar a seguir.")
+
 //ex01
-let idade = Number(prompt("Digite sua idade: "))
+let idade = Number(prompt("(ex01): Digite sua idade: "))
 if (idade >= 18 && idade < 70) {
     console.log("Voto Obrigatório!");
 } else if (idade >=70) {
@@ -12,7 +14,7 @@ if (idade >= 18 && idade < 70) {
 
 //ex02
 let senha_correta = 45678
-let senha_digitada = prompt("Digite a senha:  (padrão: 45678) ");
+let senha_digitada = prompt("(ex02): Digite a senha:  (padrão: 45678) ");
 if (senha_digitada == senha_correta) {
     console.log("Senha correta. Entrada liberada.");
 } else {
@@ -21,7 +23,7 @@ if (senha_digitada == senha_correta) {
 
 //ex03
 let notebook = 3820.0
-let salario_cliente = parseFloat(prompt("Qual o seu salário? "))
+let salario_cliente = parseFloat(prompt("(ex03): Qual o seu salário? "))
 if (salario_cliente >= notebook) {
     console.log(`O notebook custa R$${notebook} e o seu salário é de R$${salario_cliente}. Compre o Notebook agora mesmo por um preço limitado!`);
 } else if (salario_cliente > 2500.0) {
@@ -31,7 +33,7 @@ if (salario_cliente >= notebook) {
 }
 
 //Exercício Extra: Refatorar um dos exercícios acima para usar operador lógico composto (AND / OR)
-let idade1 = Number(prompt("Digite sua idade: "))
+let idade1 = Number(prompt("(ex extra): Digite sua idade: "))
 
 if (idade1 >=70 || (idade1 >= 16 && idade1 < 18)) {
     console.log("Voto Facultativo");
