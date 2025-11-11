@@ -126,3 +126,23 @@ a {
     margin-right: 400px;
     text-align: center;
 }
+
+
+/*dia03*/
+
+.tema {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.titledia3 {
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+
+.conteudo {
+  margin-left: 25px;
+  margin-bottom: 50px;
+  font-size: 15px;
+}
