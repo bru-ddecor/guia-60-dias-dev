@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia de estudos 60 dias</title>
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia de estudos 60 dias</title>
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <header>
+  <header>
   <nav class="navbar">
     <h1 class="logo">Guia de Estudos</h1>
-    
-    <!-- botão do menu -->
+
+    <!-- Botão do menu (hambúrguer) -->
     <div class="menu-toggle" id="menu-toggle">
       <div class="bar"></div>
       <div class="bar"></div>
       <div class="bar"></div>
     </div>
 
-    <!-- links do menu -->
+    <!-- Menu lateral -->
     <ul class="menu" id="menu">
       <li><a href="sobre.html">Home</a></li>
-      <li><a href="dia1.html">ex 1/60</a></li>
-      <li><a href="index.html">ex 2/60</a></li>
-      <li><a href="dia3.html">ex 3/60</a></li>
+      <li><a href="dia1.html">Ex 1/60</a></li>
+      <li><a href="index.html">Ex 2/60</a></li>
+      <li><a href="dia3.html">Ex 3/60</a></li>
+      
     </ul>
   </nav>
 </header>
 
-<p class="tema">Tema: Estruturas de Repetição/Contadores</p>
 
-<h2 class="titledia3">Notes</h2>
-<pre class="conteudo">🔁 <strong>for</strong>
+  <p class="tema">Tema: Estruturas de Repetição/Contadores</p>
+
+  <h2 class="titledia3">Notes</h2>
+  <pre class="conteudo">🔁 <strong>for</strong>
 
 Usado quando você já sabe quantas vezes quer repetir algo;
 Como um contador automático.
@@ -64,9 +68,13 @@ Contador: soma de 1 em 1 (quantas vezes algo aconteceu).
 Acumulador: soma de valores variados (ex: notas de alunos, preços etc).</pre>
 
 
-<h3>💪 <strong>Exercício 1:</strong></h3>
+  <h3>💪 <strong>Exercício 1:</strong></h3>
 
-<pre class="conteudo">Escrevendo um loop que mostra apenas os números pares de 1 a 20.
+  <pre class="conteudo">
+    Abra o console para ver o resultado dos exercícios (Ctrl + Shift + J)
+    
+    
+Escrevendo um loop que mostra apenas os números pares de 1 a 20.
 
   //JavaScript
 for (let i = 1; i <= 20; i++) {
@@ -81,11 +89,138 @@ for i in range(1, 21):
         print(i)
 </pre>
 
-<h3>💪 <strong>Exercício 2:</strong></h3>
+  <h3>💪 <strong>Exercício 2:</strong></h3>
 
-<pre class="conteudo">Pedindo um número ao usuário e mostrando a tabuada dele de 1 a 10.</pre>
+  <pre class="conteudo">Pedindo um número ao usuário e mostrando a tabuada dele de 1 a 10.
+
+let num = prompt("Digite um número para ver a tabuada: ")
+
+for(let i = 1; i <= 10; i++) {
+    let resultado = num * i;
+    console.log(`${num} x ${i} = ${resultado}`);
+}
+
+  </pre>
+
+  <h3>💪 <strong>Exercício 3:</strong></h3>
+
+  <pre class="conteudo">Loop que toca apenas notas musicais em posições pares:
+
+  let notas = ["Dó","Ré","Mi","Fá","Sol","Lá","Si"]
+
+for(let note = 0; note <= 6; note++) {
+    if(note % 2 === 0) {
+        console.log(notas[note]);
+    }
+}
+
+<strong>Anotações: </strong> O .length é uma propriedade que mostra a quantidade de caracteres ou elementos dentro de uma string ou lista (Array), por exemplo.
+</pre>
+
+  <div class="tablefix">
+    <section class="tabela1">
+      <h3>Propriedades de uma Variável</h3>
+      <p>Principais usadas em Strings</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Propriedade</th>
+            <th>Função</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.toUpperCase()</td>
+            <td>Deixa tudo em maiúsculo</td>
+          </tr>
+          <tr>
+            <td>.toLowerCase()</td>
+            <td>Deixa tudo em minúsculo</td>
+          </tr>
+          <tr>
+            <td>.includes()</td>
+            <td>Verifica se contém algo</td>
+          </tr>
+          <tr>
+            <td>.replace()</td>
+            <td>troca um pedaço por outro</td>
+          </tr>
+          <tr>
+            <td>.trim()</td>
+            <td>remove espaços extras do começo e do fim</td>
+          </tr>
+          <tr>
+            <td>.length</td>
+            <td>Conta quantos caracteres tem o texto</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </section>
 
 
-    
+    <section class="tabela1">
+      <p>Principais usadas em Arrays</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Propriedade</th>
+            <th>Função</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.push()</td>
+            <td>adiciona um item no final</td>
+          </tr>
+          <tr>
+            <td>.pop()</td>
+            <td>remove o último item</td>
+          </tr>
+          <tr>
+            <td>.shift()</td>
+            <td>remove o primeiro item</td>
+          </tr>
+          <tr>
+            <td>.unshift()</td>
+            <td>adiciona no início</td>
+          </tr>
+          <tr>
+            <td>.includes()</td>
+            <td>checa se algo existe na lista</td>
+          </tr>
+          <tr>
+            <td>.indexOf()</td>
+            <td>mostra o número da posição de um item</td>
+          </tr>
+          <tr>
+            <td>.join()</td>
+            <td>junta os itens em uma string</td>
+          </tr>
+          <tr>
+            <td>.reverse()</td>
+            <td>inverte a ordem</td>
+          </tr>
+          <tr>
+            <td>.sort()</td>
+            <td>ordena a lista (alfabética ou crescente)</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+
+<script src="dia3.js"></script>
+<script>
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+</script>
 </body>
+
 </html>
