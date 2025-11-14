@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de estudos 60 dias</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+  <nav class="navbar">
+    <h1 class="logo">Guia de Estudos</h1>
+    
+    <!-- botão do menu -->
+    <div class="menu-toggle" id="menu-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <!-- links do menu -->
+    <ul class="menu" id="menu">
+      <li><a href="sobre.html">Home</a></li>
+      <li><a href="dia1.html">ex 1/60</a></li>
+      <li><a href="index.html">ex 2/60</a></li>
+      <li><a href="dia3.html">ex 3/60</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <section>
+    <h1>Guia de Estudos 60 dias - Bruna Tironi <br>Dia 02 - Exercícios</h1>
+    <p>Tema: Estruturas condicionais e Operadores Lógicos</p>
+    <h2>Exercício 1.1/3 Verificando idade para votar</h2>
+    <h3>Java Script</h3>
+    <pre class="precode"> <code>let idade = Number(prompt("(ex01): Digite sua idade: "))
+if (idade >= 18 && idade < 70) {
+    console.log(`Você tem ${idade} anos, portanto, seu voto é obrigatório!`);
+} else if (idade >=70) {
+    console.log(`Você tem ${idade} anos, portanto, seu voto é facultativo!`)
+} else if (idade < 16) {
+    console.log(`Você tem ${idade} anos, portanto, você não pode votar!`);
+} else {
+    console.log(`Você tem ${idade} anos, portanto, seu voto é facultativo!`);
+}</code></pre>
+
+<h3>Python</h3>
+
+<pre class="precode"><code>idade = int(input("Digite sua idade: ")) 
+if idade >= 18: 
+    print("Voto obrigatório!") 
+elif idade < 16: 
+    print("Você não pode votar!") 
+else: 
+    print("Voto opcional")</code></pre> 
+</section>
+
+<section>
+<h2>Exercício 1.2/3 Senha correta</h2>
+<h3>Java Script</h3>
+<pre class="precode"><code>let senha_correta = 45678
+let senha_digitada = prompt("(ex02): Digite a senha:  (padrão: 45678) ");
+if (senha_digitada == senha_correta) {
+    console.log("Senha correta. Entrada liberada.");
+} else {
+    console.log("Senha incorreta.");
+}</code></pre>
+
+<h3>Python</h3>
+<pre class="precode"><code>senha = int(input("Crie uma senha de até 5 números: ")) 
+senha_user = int(input("Confirme a senha: ")) 
+if senha_user == senha: 
+    print('Senha configurada.') 
+else: 
+    print('Você digitou uma senha diferente da primeira.')</code></pre>
+
+</section>
+
+<section>
+<h2>Exercício 1.3/3 Valor mínimo pra comprar um notebook</h2>
+<h3>Java Script</h3>
+<pre class="precode"><code>let notebook = 3820.0
+let salario_cliente = parseFloat(prompt("(ex03): Qual o seu salário? "))
+if (salario_cliente >= notebook) {
+    console.log(`O notebook custa R$${notebook} e o seu salário é de R$${salario_cliente}. Compre o Notebook agora mesmo por um preço limitado!`);
+} else if (salario_cliente > 2500.0) {
+    console.log(`O notebook custa R$${notebook} e o seu salário é de R$${salario_cliente}. Entre em contato com nossa equipe para verificar as formas de negociação!`)
+} else {
+    console.log(`O notebook custa R$${notebook} e o seu salário é de R$${salario_cliente}, portanto você não pode fazer esta compra.`)
+}</code></pre>
+
+<h3>Python</h3>
+<pre class="precode"><code>notebook = 3820.0 
+salario = float(input("Digite quanto você ganha: ")) 
+if salario >= notebook: 
+    print("A compra foi aprovada") 
+elif salario < 2500.0: 
+    print("Compra Recusada.") 
+else: 
+    print("Entre em contato com nossa equipe para verificar as formas de negociação")</code></pre>
+
+</section>
+
+<section>
+    <h2>Exercício Extra: Refatorar um dos exercícios acima para usar operador lógico composto (AND / OR)</h2>
+    <h3>JavaScript</h3>
+    <pre class="precode"><code>
+        let idade1 = Number(prompt("(ex extra): Digite sua idade: "))
+
+if (idade1 >=70 || (idade1 >= 16 && idade1 < 18)) {
+    console.log(`Você tem ${idade1} anos, portanto, seu voto é facultativo!`);
+} else if (idade1 >= 18 && idade < 70) {
+    console.log(`Você tem ${idade1} anos, portanto, seu voto é obrigatório!`);
+} else {
+    console.log(`Você tem ${idade1} anos, portanto, você não pode votar!`);
+}</code></pre>
+
+    <h3>Python</h3>
+    <pre class="precode"><code>
+        idade1 = int(input("Digite sua idade: "))
+if idade1 > 70 or idade1 >= 16 and idade1 < 18:
+    print("Voto Facultativo.")
+elif idade1 >= 18 and idade1 <= 70:
+    print("Voto Obrigatório!")
+else:
+    print("Você não pode votar.")
+    </code></pre>
+</section>
+
+
+
+
+<script src="dia2.js"></script>
+<script>
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+</script>
+
+</body>
+</html>

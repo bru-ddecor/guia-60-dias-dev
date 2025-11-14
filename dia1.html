@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de estudos 60 dias</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    <header>
+  <nav class="navbar">
+    <h1 class="logo">Guia de Estudos</h1>
+    
+    <!-- botão do menu -->
+    <div class="menu-toggle" id="menu-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <!-- links do menu -->
+    <ul class="menu" id="menu">
+      <li><a href="sobre.html">Home</a></li>
+      <li><a href="dia1.html">ex 1/60</a></li>
+      <li><a href="index.html">ex 2/60</a></li>
+      <li><a href="dia3.html">ex 3/60</a></li>
+    </ul>
+  </nav>
+</header>
+<p>(Ctrl + shift + J para ver a resposta)</p>
+<h1 class="title01">Atividade 01</h1>
+<h3>10 Exemplos de variáveis (especificar o tipo):</h3>
+<pre>
+  1- let var = "dia"   //string 
+  2- let idade = 28   //inteiro 
+  3- let valor = 4.80   //float 
+  4- let condicao = True   //boolean
+  5- let box = "variável"   //string
+  6- let soma = 2 + 1   //inteiro
+  7- let math = "2+1"   //string
+  8- let nota = 8 > 2   //boolean
+  9- let verify = 1 != 1   //boolean
+  10- let pontuacao = 3.0   //float
+
+</pre>
+
+<h1 class="title01">Atividade 02</h1>
+<h3>Script que soma dois números e exibe o resultado no console:</h3>
+
+  <pre>
+  let num1 = Number(prompt("Digite o 1º número: "))
+  let num2 = Number(prompt("Digite o 2º número: "))
+  let resultado = (num1 + num2)
+  console.log(`O resultado da soma é ${resultado}`)
+
+<strong>-- Python --</strong>
+
+ num1 = int(input("Digite o 1º número: "))
+ num2 = int(input("Digite o 2º número: "))
+ resultado = num1 + num2
+ print(f"Soma dos números: {resultado})
+  </pre>
+
+
+<script>
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+</script>
+<script src="dia1.js"></script>
+</body>
+</html>
